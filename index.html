@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Library Management System</h1>
+    <div class="container">
+      <form id="book-form">
+        <label for="book-name">Book Name</label>
+        <input type="text" id="book-name" name="book-name" style="color:black; width: 50%;" required>
+        <label for="issued-to">Issued To</label>
+        <input type="text" id="issued-to" name="issued-to" style="color:black; width: 50%;" required>
+        <button type="submit" id="issue-book-btn" style="width: 51%;">Issue Book</button>
+      </form>
+      <table id="issued-books-table">
+        <tbody>
+          <tr>
+            <th>ID</th>
+            <th>Book Name</th>
+            <th>Issued To</th>
+            <th>Issued Date and Time</th>
+            <th>Status</th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
